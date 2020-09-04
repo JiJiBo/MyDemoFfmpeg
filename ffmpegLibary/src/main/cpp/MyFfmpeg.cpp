@@ -40,7 +40,7 @@ void MyFfmpeg::decodeFFmpegThread() {
                 audio = new MyAudio(statue);
                 audio->streamIndex = i;
                 audio->avCodecParameters = pFormatCtx->streams[i]->codecpar;
-                LOGE("寻找解码器 成功");
+                LOGE("寻找流 成功");
                 break;
             }
         }
